@@ -1,0 +1,21 @@
+{
+  "name": "ts-react-router-static-config",
+  "private": true,
+  "scripts": {
+    "compile": "rm -rf ./target/ && tsc",
+    "start": "npm run compile && node ./target/example.js",
+    "format": "prettier --write './**/*.{ts,tsx,js,json,md}' '.prettierrc'"
+  },
+  "dependencies": {
+    "fp-ts": "^1.12.3",
+    "react": "^16.7.0",
+    "react-router": "^4.3.1",
+    "unionize": "^2.1.2"
+  },
+  "devDependencies": {
+    "@types/react": "^16.7.20",
+    "@types/react-router": "^4.4.3",
+    "prettier": "^1.15.3",
+    "typescript": "^3.2.4"
+  }
+}
