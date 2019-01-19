@@ -1,9 +1,8 @@
+import { ofType, TagsOf, unionize, UnionOf } from 'unionize';
+
 export enum BasePathPart {
     User = 'user',
 }
-
-export type HomeRouteData = {};
-export type UserRouteData = { username: string };
 
 //
 // Param types
@@ -19,7 +18,9 @@ export type UserParams = { username: string };
 
 //
 
-import { ofType, TagsOf, unionize, UnionOf } from 'unionize';
+export type HomeRouteData = {};
+export type UserRouteData = { username: string };
+
 export const RouteData = unionize(
     {
         Home: ofType<HomeRouteData>(),
